@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="card-wrapper">
+    <div class="flex-wrap" >
+    <div class="container" >
+<form action="/submit" method="POST">
+    <h1>FEEDBAKCK FORM</h1>
+    <table border="0px" width="100%">
+        <tr>
+            <td> <p>Name:</p></td>
+            <td><input type="text" size="40" name="name" placeholder="Enter your name" required></td>
+        </tr>
+        <tr>
+            <td><p>Id no :</p></td>
+            <td ><input type="number" maxlength="10" name="idno" size="40" placeholder="enter your id number" required></td>
+        </tr>
+        <tr>
+            <td><p>Feedback</p></td>
+            <td><input type="text" name="feedback" palceholder="enter your feedback here."></td>
+        </tr>
+        <tr>
+            <td><button type="submit" class="btn btn-primary">Submit</button></td>
+        </tr>
+    </table>
+</div> 
+</div>
+</div>
+</form>
+
+{% endblock %}
